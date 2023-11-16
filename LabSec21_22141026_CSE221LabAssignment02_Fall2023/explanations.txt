@@ -1,0 +1,15 @@
+Task 1 a: I used nested loops to compare all possible pairs of numbers, resulting in a time complexity of O(n^2), where 'n' is the number of elements in the list. It checks for pairs of numbers that sum up to the desired output and breaks the loop if a valid pair is found, but in the worst case, it iterates through all possible pairs.
+
+Task 1 b: I tried a two-pointer approach to efficiently search for a pair of numbers in the list that sum up to the target value (`temp2`). The pointers (`left` and `right`) traverse the list only once, and the code exits the loop as soon as it finds a valid pair. This efficient approach has a time complexity of O(N), as it only requires a single pass through the list.
+
+
+Task 2 a: Here, the code reads two lists of integers and merges them into a single list. Then, it sorts the merged list using the `.sort()` method, which has a time complexity of O(N*log(N)). Therefore, the overall time complexity of this code is O(N*log(N)) due to the sorting operation.
+
+
+Task 2 b: I used two pointers, `i` and `j`, to iterate through both lists exactly once. This merging process has a linear time complexity of O(N), where N is the total number of elements in both lists, as each element is compared and placed once.
+
+
+Task 3: The main part of the code sorts a list of tasks by their end times and then iterates through the sorted list to find the maximum number of non-overlapping tasks. The time complexity of the sorting operation is O(N*log(N)), and the subsequent iteration through the sorted list is O(N), resulting in an overall time complexity of O(N*log(N)).
+
+
+Task 4: Here, just like task 3, I solved the task by sorting the list of tasks by their start times and then efficiently assigning them to M people while keeping track of the completed tasks. It ensures that overlapping tasks are assigned to the same person. The code has a time complexity of O(N*log(N)) due to the sorting operation, followed by a linear pass through the sorted list, resulting in an overall time complexity of O(N*log(N)).
